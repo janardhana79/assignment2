@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-image: url("https://tse2.mm.bing.net/th?id=OIP.XqW0oLhicKo4fh2m8K1uVgHaFl&pid=Api&P=0&w=215&h=163");
+  padding: 50px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+.column.side {
+  width: 25%;
+}
+
+
+.column.middle {
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+.footer {
+  background-color: grey;
+  padding: 10px;
+
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Computer</h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="https://en.wikipedia.org/wiki/Computer">Computer Wikipedia</a>
+  <a href="https://www.youtube.com/results?search_query=computer+hardware">Computer Hardware</a>
+  <a href="https://www.computerhope.com/os.htm">Computer Operating System</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Main Parts of Computer</h2>
+    <p>Central Processing Unit (CPU)</p>
+<p>Random Access Memory (RAM)</p>
+<p>Hard Drive.</p>
+<p>Video Card.</p>
+<p>Motherboard.</p>
+</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>What is Computer?</h2>
+    <p>A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming. Modern computers have the ability to follow generalized sets of operations, called programs. These programs enable computers to perform an extremely wide range of tasks. A "complete" computer including the hardware, the operating system (main software), and peripheral equipment required and used for "full" operation can be referred to as a computer system. This term may as well be used for a group of computers that are connected and work together, in particular a computer network or computer cluster.</p>
+  </div>
+  
+  <div class="column side">
+    <h2>Uses of a Computer</h2>
+    <p>Arithmetic Data Processing.</p>
+
+<p>Communication.</p>
+<p>Education.</p>
+<p>Computers in Sports.</p>
+<p>Software Development.</p>
+<p>Web Development.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>To know more about computer follow us.</p>
+</div>
+  
+</body>
+</html>
